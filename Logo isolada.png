@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Revolução Verde</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FA;
+    color: #1F2937;
+}
+
+/* NAV */
+.navegacao {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+}
+
+.navegacao__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.navegacao__logo {
+    width: 50px;
+    display: block;
+}
+
+.navegacao__lista {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navegacao__link {
+    text-decoration: none;
+    color: #1F2937;
+}
+
+.navegacao__link:hover {
+    color: #3DCD58;
+}
+
+/* HEADER COM IMAGEM */
+.header {
+    height: 200px;
+    background-image: url("Logo.png");
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    /*background-color: #3dc255;*/
+}
+
+/* BANNER */
+.banner {
+    background: #3dc255;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 34px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* CONTEÚDO */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-left: 4px solid #3DCD58;
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    padding-right: 70px; /* espaço pro ícone */
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 140px;
+    position: relative; /* ESSENCIAL */
+}
+
+.card_icone {
+    position: absolute;
+    top: 25 px;
+    right: 40px;
+
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.card_icone_solucao {
+    position: absolute;
+    top: 40 px;
+    right: 40px;
+
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.card_icone_resultado {
+    position: absolute;
+    top: 60 px;
+    right: 40px;
+
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.card_icone_funcionamento {
+    position: absolute;
+    top: 80 px;
+    right: 40px;
+
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.section ul {
+    list-style: disc;          /* bolinha padrão */
+    padding-left: 20px;        /* recuo correto */
+    margin-top: 10px;
+}
+
+.section li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+}
+
+.cta button {
+    background: #3DCD58;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
+/* FOOTER */
+.rodape {
+    background-color: #3dc255;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.rodape__container {
+    position: relative;       
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.rodape__logo {
+    position: absolute;
+    left: 20px;
+    width: 30px;
+}
+
+.rodape__texto {
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav class="navegacao">
+    <div class="navegacao__container">
+        <img src="Logo isolada.png" class="navegacao__logo">
+
+        <ul class="navegacao__lista">
+            <li><a href="#problema" class="navegacao__link">Problema</a></li>
+            <li><a href="#solucao" class="navegacao__link">Solução</a></li>
+            <li><a href="#resultados" class="navegacao__link">Resultados</a></li>
+            <li><a href="#como-funciona" class="navegacao__link">Como Funciona</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="header"></header>
+
+<!-- BANNER -->
+<div class="banner">
+    <h1>Eficiência Energética com Inteligência Artificial</h1>
+    <p>Diagnostique, reduza custos e diminua emissões de CO₂ sem sensores</p>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="container">
+
+    <div id="problema" class="section">
+        <h2>Problema</h2>
+        <div class="card">
+
+    <img src="icone problema.png" class="card_icone">
+
+    A maior parte das indústrias opera com máquinas antigas sem qualquer tipo de monitoramento energético.<br>
+    Isso gera desperdício invisível, aumento de custos operacionais e impede o atendimento a exigências ESG.
+
+</div>
+
+    </div>
+
+ <div id="solucao" class="section">
+    <h2>A Solução</h2>
+    <div class="card">
+
+    <img src="icone solucao.png" class="card_icone_solucao">
+
+    Nossa IA analisa imagens e identifica automaticamente:
+    <ul>
+        <li>Consumo energético estimado</li>
+        <li>Emissão de CO₂</li>
+        <li>Nível de eficiência</li>
+    </ul>
+</div>
+</div>
+
+<div id="resultados" class="section">
+    <h2>Resultados</h2>
+    <div class="card">
+
+    <img src="icone fazer.png" class="card_icone_resultado">
+
+    <ul>
+        <li>Redução de até 35% no consumo</li>
+        <li>Payback entre 6 e 18 meses</li>
+        <li>Recomendações inteligentes de retrofit</li>
+        <li>Preparação para ESG</li>
+    </ul>
+</div>
+</div>
+
+<div id="como-funciona" class="section">
+    <h2>Como Funciona</h2>
+    <div class="card">
+
+    <img src="icone funcionamento.png" class="card_icone_funcionamento">
+
+    <ul>
+        <li>Tire uma foto da máquina</li>
+        <li>Receba diagnóstico automático</li>
+        <li>Aplique melhorias sugeridas</li>
+        <li>Acompanhe os resultados</li>
+    </ul>
+</div>
+</div>
+
+<div class="cta">
+    <h2>Testar agora<br></h2>
+    <p>Acesse o sistema e veja na prática<br></p>
+    
+    <a href="https://machine-vision-insight.lovable.app/" target="_blank">
+        <button>Acessar Plataforma</button>
+    </a>
+</div>
+
+</div>
+
+<footer class="rodape">
+    <div class="rodape__container">
+        <img src="Logo invertida.png" class="rodape__logo">
+        <p class="rodape__texto">© 2026 - Revolução Verde</p>
+    </div>
+</footer>
+</body>
+</html>
